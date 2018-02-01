@@ -1,6 +1,6 @@
 public class Entreprise{
     private String nom;
-    private Adresse adresse;
+    private Adresse adresse = new Adresse();
 
     public String getNom() {
         return nom;

@@ -1,10 +1,10 @@
 public class Contact {
     private String prenom;
     private String nom;
-    private Adresse adresse;
-    private Occupation occupation;
-    private Entreprise entreprise;
-    private Telephone telephone;
+    private int nbTelephone=0;
+    private Adresse adresse = new Adresse();
+    private Occupation occupation = new Occupation();
+    private Telephone[] telephone=new Telephone[10];
 
     public String getPrenom() {
         return prenom;
@@ -22,9 +22,15 @@ public class Contact {
         this.nom = nom;
     }
 
-    public Adresse getAdresse() {
-        return adresse;
+    public int getNbTelephone() {
+        return nbTelephone;
     }
+
+    public void setNbTelephone(int nbTelephone) {
+        this.nbTelephone = nbTelephone;
+    }
+
+    public Adresse getAdresse() { return adresse; }
 
     public void setAdresse(Adresse adresse) {
         this.adresse = adresse;
@@ -38,20 +44,8 @@ public class Contact {
         this.occupation = occupation;
     }
 
-    public Entreprise getEntreprise() {
-        return entreprise;
-    }
+    public Telephone[] getTelephone() { return telephone; }
 
-    public void setEntreprise(Entreprise entreprise) {
-        this.entreprise = entreprise;
-    }
-
-    public Telephone getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(Telephone telephone) {
-        this.telephone = telephone;
-    }
+    public void setTelephone(Telephone[] telephone) { this.telephone = telephone; }
 }
 

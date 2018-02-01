@@ -42,7 +42,11 @@ public class liste {
                     System.out.print("  Rue : ");
                     tabContact[nbContact - 1].getAdresse().setRue(sc.next());
                     System.out.print("  Appartement : ");
-                    tabContact[nbContact - 1].getAdresse().setApp(sc.next());
+                    input=sc.nextLine().trim();
+                    input=sc.nextLine().trim();
+                    if(!input.equals("")) {
+                        tabContact[nbContact - 1].getAdresse().setApp(input);
+                    }
                     System.out.print("  Ville : ");
                     tabContact[nbContact - 1].getAdresse().setVille(sc.next());
                     System.out.print("  Province : ");
@@ -64,7 +68,11 @@ public class liste {
                     System.out.print("      Rue : ");
                     tabContact[nbContact - 1].getOccupation().getEntreprise().getAdresse().setRue(sc.next());
                     System.out.print("      Appartement : ");
-                    tabContact[nbContact - 1].getOccupation().getEntreprise().getAdresse().setApp(sc.next());
+                    input=sc.nextLine().trim();
+                    input=sc.nextLine().trim();
+                    if(!input.equals("")) {
+                        tabContact[nbContact - 1].getOccupation().getEntreprise().getAdresse().setApp(input);
+                    }
                     System.out.print("      Ville : ");
                     tabContact[nbContact - 1].getOccupation().getEntreprise().getAdresse().setVille(sc.next());
                     System.out.print("      Province : ");
